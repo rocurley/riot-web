@@ -54,6 +54,7 @@ module.exports = {
         }
     },
     resolve: {
+        fallback: path.join(__dirname, "node_modules") ,
         alias: {
             // alias any requires to the react module to the one in our path, otherwise
             // we tend to get the react source included twice when using npm link.
@@ -64,6 +65,9 @@ module.exports = {
             // same goes for js-sdk
             "matrix-js-sdk": path.resolve('./node_modules/matrix-js-sdk'),
         },
+    },
+    resolveLoader: {
+        fallback: path.join(__dirname, "node_modules") ,
     },
     externals: {
         "olm": "Olm",
