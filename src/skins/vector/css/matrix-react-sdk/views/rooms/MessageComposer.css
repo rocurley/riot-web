@@ -128,6 +128,7 @@ limitations under the License.
 }
 
 .mx_MessageComposer_upload,
+.mx_MessageComposer_sticker,
 .mx_MessageComposer_hangup,
 .mx_MessageComposer_voicecall,
 .mx_MessageComposer_videocall {
@@ -140,6 +141,7 @@ limitations under the License.
 }
 
 .mx_MessageComposer_upload object,
+.mx_MessageComposer_sticker object,
 .mx_MessageComposer_hangup object,
 .mx_MessageComposer_voicecall object,
 .mx_MessageComposer_videocall object {
